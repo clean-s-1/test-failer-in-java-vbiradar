@@ -2,10 +2,16 @@ public class Alerter {
     static int alertFailureCount = 0;
     static int networkAlertStub(float celcius) {
         System.out.println("ALERT: Temperature is " + celcius + " celcius");
+        int responseCode =0;
         // Return 200 for ok
         // Return 500 for not-ok
         // stub always succeeds and returns 200
-        return 200;
+        if(celcius > 200) {
+        	responseCode = 500;
+        }else {
+        	responseCode=200;
+        }
+        return responseCode;
     }
     static void alertInCelcius(float farenheit) {
         float celcius = (farenheit - 32) * 5 / 9;
@@ -21,6 +27,7 @@ public class Alerter {
     public static void main(String[] args) {
         alertInCelcius(400.5f);
         alertInCelcius(303.6f);
+        assert(alertFailureCount == 1);
         System.out.printf("%d alerts failed.\n", alertFailureCount);
         System.out.println("All is well (maybe!)\n");
     }
