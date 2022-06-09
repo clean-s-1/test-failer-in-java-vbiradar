@@ -5,7 +5,6 @@ public class alerter {
 		return (farenheit - 32) * 5 / 9;
 
 	}
-
 	static void alertInCelcius(final float farenheit, final IAlerter alertStub) {
 		float celcius = convertFarenheitToCelcius(farenheit);
 		// int returnCode = networkAlertStub(celcius);
