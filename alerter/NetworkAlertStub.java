@@ -2,7 +2,7 @@
  * 
  */
 
-public class NetworkAlertStub {
+public class NetworkAlertStub implements IAlerter {
 
 	public int sendRequset(float celcius) {
 
