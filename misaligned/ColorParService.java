@@ -1,15 +1,4 @@
-
 public class ColorParService {
-
-	public ColorPair getColorFromPairNumber(int pairNumber) {
-		int zeroBasedPairNumber = pairNumber - 1;
-
-		return new ColorPair();
-	}
-
-	public int getPairNumberFromColor() {
-		return 0;
-	}
 
 	public static int printColourMapAndreturnColorCodeNumber(String[] majorColors, String[] minorColors) {
 
