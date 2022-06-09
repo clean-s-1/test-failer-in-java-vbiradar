@@ -1,6 +1,5 @@
 
 public class ColorPair {
-
 	private Integer pairNumber;
 	private String majorColor;
 	private String minorColor;

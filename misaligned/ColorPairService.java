@@ -1,6 +1,5 @@
 
 public class ColorPairService {
-	
 	public static int printColourMapAndreturnColorCodeNumber(String[] majorColors, String[] minorColors) {
 
 		System.out.println(+majorColors.length * minorColors.length + " pair color code");
