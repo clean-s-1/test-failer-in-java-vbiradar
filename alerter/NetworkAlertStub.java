@@ -4,7 +4,7 @@
 
 public class NetworkAlertStub implements IAlerter {
 
-	public int sendRequset(float celcius) {
+	public Integer sendRequset(float celcius) {
 
 		System.out.println("ALERT: Temperature is " + celcius + " celcius");
 		int responseCode = 0;
