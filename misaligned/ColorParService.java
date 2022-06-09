@@ -1,6 +1,7 @@
-public class ColorParService {
 
-	public static int printColourMapAndreturnColorCodeNumber(String[] majorColors, String[] minorColors) {
+public class ColorPairService {
+
+	public int printColourMapAndreturnColorCodeNumber(String[] majorColors, String[] minorColors) {
 
 		System.out.println(+majorColors.length * minorColors.length + " pair color code");
 		System.out.println("Pair no|Major color|Minor color");
@@ -19,7 +20,7 @@ public class ColorParService {
 		return majorColors.length * minorColors.length;
 	}
 
-	public static String getFormattedColorPair(ColorPair colorPair) {
+	public String getFormattedColorPair(ColorPair colorPair) {
 
 		return String.format("%d %s %s %n", colorPair.getPairNumber(), colorPair.getMajorColor(),
 				colorPair.getMinorColor());
