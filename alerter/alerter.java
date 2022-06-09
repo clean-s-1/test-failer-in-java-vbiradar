@@ -6,7 +6,7 @@ public class Alerter {
 
 	}
 
-	static void alertInCelcius(final float farenheit, final NetworkAlertStub alertStub) {
+	static void alertInCelcius(final float farenheit, final IAlerter alertStub) {
 		float celcius = convertFarenheitToCelcius(farenheit);
 		// int returnCode = networkAlertStub(celcius);
 		int returnCode = alertStub.sendRequset(celcius);
@@ -20,7 +20,7 @@ public class Alerter {
 	}
 
 	public static void main(String[] args) {
-		NetworkAlertStub alertStub = new NetworkAlertStub();
+		IAlerter alertStub = new NetworkAlertStub();
 		alertInCelcius(400.5f, alertStub);
 		alertInCelcius(303.6f, alertStub);
 		assert (alertFailureCount != 0);
