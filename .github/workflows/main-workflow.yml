@@ -20,12 +20,22 @@ jobs:
         cd tshirts
         java -ea tshirts.java
 
-    - name: alerter fail
-      run: |
-        cd alerter
-        java -ea Alerter.java
-
-    - name: misaligned fail
+    - name: Build
       run: |
         cd misaligned
-        java -ea Misaligned.java
+        javac misaligned.java
+
+    - name: misaligned pass
+      run: |
+        cd misaligned
+        java -ea  misaligned
+
+    - name: Build
+      run: |
+        cd alerter
+        javac alerter.java    
+
+    - name: alerter pass
+      run: |
+        cd alerter
+        java -ea alerter
