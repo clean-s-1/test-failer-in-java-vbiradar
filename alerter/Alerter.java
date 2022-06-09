@@ -1,4 +1,4 @@
-public class alerter {
+public class Alerter {
 	static int alertFailureCount = 0;
 
 	static float convertFarenheitToCelcius(final float farenheit) {
