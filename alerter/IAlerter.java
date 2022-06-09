@@ -1,5 +1,5 @@
 
 public interface IAlerter {
 
-	public int sendRequset(float celcius);
+	public Integer sendRequset(float celcius);
 }
