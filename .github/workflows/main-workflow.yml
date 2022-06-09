@@ -23,7 +23,7 @@ jobs:
     - name: misaligned fail
       run: |
         cd misaligned
-        java -ea Misaligned.java
+        java -ea misaligned.java
 
     - name: alerter fail
       run: |
